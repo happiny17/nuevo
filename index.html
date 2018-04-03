@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+</head>
+<body>
+		<header>
+					<nav id="nav-header" class="menu">
+							<div class="cabecera">
+						<ul>
+							<li><a href="file:///C:/Users/yondr/Desktop/Proyecto%20web/index.html">Inicio</a></li>
+							<li><a href="javascript:callSingup()" style="width:auto;">Registrar</a></li>
+							<li><a href="javascript:callLogin()" style="width:auto;">Login</a></li>
+							<li><a href="file:///C:/Users/yondr/Desktop/Proyecto%20web/post.html">Nuevo post</a></li>
+						</ul>
+							</div>
+					</nav>
+				</div>
+			</header>
+<form class="blog">
+	<div class="posts">
+		<div class="titulo">
+			<h1>Titulo: De que se trata esta pagina web?</h1>
+		</div>
+		<div class="autor">
+			<strong>Autor:</strong>Yondry Cepeda Ventura
+		</div>
+		<div class="contenido">
+			<p>Este es el contenido del blog, aqui podras visualizar cualquier tema de importancia que quieras establecer.
+				Solo recuerda que para poder postear algun tema de interes tendras que ingresar a tu cuenta de usuario,
+				en caso de no tener una podras registrarte como un nuevo usuario en la opcion de registro.
+			</p>
+		</div>
+	</div>
+</form>	
+<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		<form class="modal-content animate" action="/action_page.php">
+		  <div class="container">
+			<h1>Registrate aqui!</h1>	
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Enter Email" name="email" required>
+	  
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+	  
+			<label for="psw-repeat"><b>Repeat Password</b></label>
+			<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			
+			<div class="clearfix">
+			  <button type="submit" class="signupbtn">Registrar</button>
+			  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			</div>
+		  </div>
+		</form>
+	  </div>
+	  <div id="id02" class="modal">
+  
+			<form class="modal-content animate" action="/action_page.php">
+			  <div class="imgcontainer">
+						<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<img src="images/img_avatar.png" alt="Avatar" class="avatar">
+			  </div>
+		  
+			  <div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input id="username" type="text" placeholder="Enter Username" name="uname" required>
+		  
+				<label for="psw"><b>Password</b></label>
+				<input id="password" type="password" placeholder="Enter Password" name="psw" required>
+				  
+				<button id="login" type="submit">Login</button>
+				<span class="psw">Forgot <a href="#">password?</a></span>	
+			  </div>
+			  <div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+			
+			  </div>
+			</form>
+		  </div>
+		  
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="script/index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCOuY1Y-tKPkIFjEfhSdvyzfuBo5JyxnDU",
+    authDomain: "ejemplo-1-a8e91.firebaseapp.com",
+    databaseURL: "https://ejemplo-1-a8e91.firebaseio.com",
+    projectId: "ejemplo-1-a8e91",
+    storageBucket: "ejemplo-1-a8e91.appspot.com",
+    messagingSenderId: "201258518879"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</body>
+</html>

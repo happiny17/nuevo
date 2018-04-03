@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Post</title>
+        <meta charset="UTF-8">
+    	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    </head>
+    <body>
+        <header>
+            <nav id="nav-header" class="menu">
+                <div class="cabecera">
+                    <ul>
+                        <li><a href="file:///C:/Users/yondr/Desktop/Proyecto%20web/index.html">Inicio</a></li>
+                        <li><a href="file:///C:/Users/yondr/Desktop/Proyecto%20web/post.html">Nuevo post</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+<form id="form">
+    <div class="post-nuevo">
+        <div class="label">
+          <label>Titulo: </label>
+        </div>
+        <div class="input">
+            <input id="titulo" placeholder="Titulo del articulo..."/>
+        </div>
+        <div class="label">
+          <label>Autor: </label>
+        </div>
+        <div class="input">
+            <input id="autor" placeholder="Autor del articulo..."/>
+        </div>
+        <div class="label">
+          <label>Contenido: </label>
+        </div>
+        <div class="input">
+            <textarea id="contenido" placeholder="Contenido del post..."></textarea>
+        </div>
+        <button id="publicar" type="button" onclick="publicar_post()">publicar</button>
+        <button id="cancelar" type="button" onclick="cancelar_post()">cancelar</button>
+    </div>
+</form>
+<script src="script/post.js"></script>
+    </body>
+</html>
